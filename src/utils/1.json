@@ -1,0 +1,117 @@
+{
+  list: [
+    {
+      name: 'Z',
+      start: 37204,
+      end: 39687,
+      lane: [
+        { start: 37545 },
+        { start: 38169 },
+        { start: 38799 },
+        { start: 39397 }
+      ],
+      camera: [
+        { start: 37525 },
+        { start: 37577 },
+        { start: 37725 },
+        { start: 37877 },
+        { start: 38027 },
+        { start: 38155 },
+        { start: 38171 },
+        { start: 38182 },
+        { start: 38327 },
+        { start: 38477 },
+        { start: 38606 },
+        { start: 38777 },
+        { start: 38799 },
+        { start: 38826 },
+        { start: 38918 },
+        { start: 39077 },
+        { start: 39227 },
+        { start: 39392 }
+      ],
+      information: [
+        { start: 37840, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' },
+        { start: 38475, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' },
+        { start: 39093, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' }
+      ],
+      parking: [
+        { start: 38154 },
+        { start: 38804 }
+      ]
+    },
+    {
+      name: 'Y',
+      start: 37239,
+      end: 39722,
+      lane: [
+        { start: 37545 },
+        { start: 38185 },
+        { start: 38820 },
+        { start: 39460 }
+      ],
+      camera: [
+        { start: 37701 },
+        { start: 37849 },
+        { start: 38005 },
+        { start: 38153 },
+        { start: 38188 },
+        { start: 38299 },
+        { start: 38449 },
+        { start: 38596 },
+        { start: 38740 },
+        { start: 38817 },
+        { start: 38854 },
+        { start: 38895 },
+        { start: 39039 },
+        { start: 39194 },
+        { start: 39349 }
+      ],
+      information: [
+        { start: 37850, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' },
+        { start: 38540, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' },
+        { start: 39155, title: '全线路段封闭，车辆注意慢行。全路施工，限速60Km/h' }
+      ],
+      parking: [
+        { start: 38125 },
+        { start: 38825 }
+      ]
+    }
+  ],
+  people_transverse: [
+    {
+      start: 37747,
+      end: 37790
+    },
+    {
+      start: 37955,
+      end: 37990
+    },
+    {
+      start: 38365,
+      end: 38400
+    },
+    {
+      start: 38575,
+      end: 38613
+    },
+    {
+      start: 38985,
+      end: 39020
+    },
+    {
+      start: 39184,
+      end: 39220
+    }
+  ],
+  car_transverse: [
+    {
+      start: 38170,
+      end: 38190
+    },
+    {
+      start: 38799,
+      end: 38820
+    }
+  ]
+}

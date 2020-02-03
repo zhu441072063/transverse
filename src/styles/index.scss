@@ -1,0 +1,310 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './btn.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+.clear{
+  clear: both;
+}
+
+//设备详情弹窗
+.eq-info{
+  .el-main{
+    .info-img{
+      width: 200px;
+      height: 200px;
+      display: flex;
+    }
+    .zall{
+      border: 1px solid #cccccc;
+      border-bottom: none;
+      .zlist{
+        border-bottom: 1px solid #cccccc;
+        line-height: 40px;
+        text-indent: 8px;
+        position: relative;
+        .el-button--mini{
+          position: absolute;
+          right: 5px;
+          top: 5px;
+        }
+      }
+      .ztitle{
+        line-height: 50px;
+        background: #eeeeee;
+      }
+    }
+    .zalltwo{
+      margin-top: 20px;
+    }
+  }
+  .el-footer{
+    padding: 0;
+    text-align: left;
+    background: #cccccc;
+    .el-col{
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.dialog-them1 {
+  .el-container {
+    min-width: 100%;
+    border: 1px solid #dfdfdf;
+    .el-header {
+      background-color: #eceff1;
+      height: 60px;
+      line-height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .el-button {
+        height: 40px;
+      }
+    }
+    .el-main {
+      width: 90%;
+      margin: 0 auto;
+      .el-form {
+        .el-row {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .el-form-item {
+          .el-input {
+            width: 250px;
+            margin-right: 0px;
+          }
+          .pile_input {
+            width: 125px;
+          }
+          .small_input {
+            width: 100px !important;
+            .el-input{
+              width: 100%;
+            }
+          }
+          .last_input {
+            width: 600px;
+          }
+        }
+      }
+    }
+    .el-footer {
+      border-top: 1px solid #d0d3d6;
+      display: flex;
+      justify-content: center;
+      height: 80px;
+      align-items: center;
+      .el-button {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.dialog-them2 {
+  .zinput{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .zinput{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .t-list{
+      margin-left: 10px;
+    }
+  }
+}
